@@ -1,6 +1,13 @@
 <?php
+session_start();
 require 'db.php';
 require 'functions.php';
+
+// Check of de gebruiker is ingelogd
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit;
+}
 
 $tasks = getTasks($pdo);
 ?>
@@ -14,6 +21,7 @@ $tasks = getTasks($pdo);
 </head>
 <body>
     <h1>📝 Mijn To-Do Lijst</h1>
+    <p>Welkom, <?= htmlspecialchars($_SESSION['username']) ?>! <a href="logout.php">Uitloggen</a></p>
 
     <!-- Formulier om een taak toe te voegen -->
     <form method="POST" action="add.php">

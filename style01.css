@@ -20,7 +20,7 @@ body {
 
 h2 {
   margin-bottom: 1.5rem;
-  color: #5d5dff;
+  color: #4a90e2; /* Nieuw blauw */
 }
 
 input[type="text"],
@@ -37,7 +37,7 @@ input[type="password"] {
 button {
   width: 100%;
   padding: 0.8rem;
-  background-color: #5d5dff;
+  background-color: #4a90e2; /* Nieuw blauw */
   color: white;
   border: none;
   border-radius: 10px;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: #4a4ad6;
+  background-color: #357ab8; /* Donkerder blauw */
 }
 
 p {
@@ -56,7 +56,7 @@ p {
 }
 
 a {
-  color: #5d5dff;
+  color: #4a90e2; /* Nieuw blauw */
   text-decoration: none;
 }
 
