@@ -20,3 +20,4 @@ function deleteTask($pdo, $id) {
     $stmt->execute([$id]);
 }
 ?>
+ 
